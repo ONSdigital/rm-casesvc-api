@@ -34,7 +34,7 @@ public class CaseDetailsDTO {
     private CaseDTO.CaseState state;
     private String iac;
     private String caseRef;
-    
+
     private UUID actionPlanId;
     private UUID collectionInstrumentId;
     private UUID partyId;
