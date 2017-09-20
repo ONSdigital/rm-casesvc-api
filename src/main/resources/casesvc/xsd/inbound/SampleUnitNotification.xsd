@@ -11,14 +11,22 @@
 			<xs:extension base="SampleUnitBase">
 				<xs:sequence>
 					<xs:element name="collectionExerciseId" type="xs:string"  minOccurs="1" maxOccurs="1" />
-		            <xs:choice>
+		              <xs:choice>
 		                <xs:element name="actionPlanId" type="xs:string" />
-			            <xs:element name="sampleUnitChild" type="SampleUnitChild" />
-		            </xs:choice>
+			            <xs:element name="sampleUnitChildren" type="SampleUnitChildren" />
+			          </xs:choice>
 		        </xs:sequence>	
 		    </xs:extension>
 		 </xs:complexContent>    
 	</xs:complexType>
+
+	<!-- the outer element containing children -->
+    <xs:complexType name="SampleUnitChildren">
+         <xs:sequence>
+             <xs:element name="sampleUnitChild" type="SampleUnitChild"
+                minOccurs="0" maxOccurs="unbounded" />
+         </xs:sequence>
+    </xs:complexType>
 
     <xs:complexType name="SampleUnitChild">
     	<xs:complexContent>
