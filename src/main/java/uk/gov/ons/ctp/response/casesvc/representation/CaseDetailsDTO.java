@@ -16,12 +16,7 @@ import java.util.UUID;
 @AllArgsConstructor
 @NoArgsConstructor(access = AccessLevel.PUBLIC)
 public class CaseDetailsDTO {
-    /**
-     * enum for case state
-     */
-    public enum CaseState {
-        ACTIONABLE, INACTIONABLE, REPLACEMENT_INIT, SAMPLED_INIT;
-    }
+
 
     /**
      * enum for Case event
@@ -31,7 +26,7 @@ public class CaseDetailsDTO {
     }
 
     private UUID id;
-    private CaseDTO.CaseState state;
+    private CaseState state;
     private String iac;
     private String caseRef;
     

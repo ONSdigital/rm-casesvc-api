@@ -15,12 +15,6 @@ import java.util.UUID;
 @AllArgsConstructor
 @NoArgsConstructor(access = AccessLevel.PUBLIC)
 public class CaseDTO {
-  /**
-   * enum for case state
-   */
-  public enum CaseState {
-    ACTIONABLE, INACTIONABLE, REPLACEMENT_INIT, SAMPLED_INIT;
-  }
 
   /**
    * enum for Case event
