@@ -24,9 +24,9 @@ public class CaseDTO {
     REPLACED, CASE_CREATED
   }
 
-  private UUID id;
   private CaseState state;
 
+  private UUID id;
   private UUID actionPlanId;
   private UUID collectionInstrumentId;
   private UUID partyId;

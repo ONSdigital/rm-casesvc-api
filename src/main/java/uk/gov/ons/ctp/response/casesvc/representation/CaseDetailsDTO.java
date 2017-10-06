@@ -17,30 +17,23 @@ import java.util.UUID;
 @NoArgsConstructor(access = AccessLevel.PUBLIC)
 public class CaseDetailsDTO {
 
-
-    /**
-     * enum for Case event
-     */
-    public enum CaseEvent {
-        ACTIVATED, DEACTIVATED, DISABLED, HOUSEHOLD_PAPER_REQUESTED, INDIVIDUAL_RESPONSE_REQUESTED, REPLACED
-    }
+    private CaseState state;
 
     private UUID id;
-    private CaseState state;
-    private String iac;
-    private String caseRef;
-
     private UUID actionPlanId;
     private UUID collectionInstrumentId;
     private UUID partyId;
 
+    private String iac;
+    private String caseRef;
+    private String createdBy;
     private String sampleUnitType;
 
-    private String createdBy;
     private Date createdDateTime;
+
+    private CaseGroupDTO caseGroup;
 
     private List<ResponseDTO> responses;
 
-    private CaseGroupDTO caseGroup;
     private List<CaseEventDTO> caseEvents;
 }
