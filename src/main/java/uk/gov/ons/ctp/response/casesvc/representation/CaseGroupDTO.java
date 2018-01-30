@@ -20,4 +20,5 @@ public class CaseGroupDTO {
   private UUID partyId;
   private String sampleUnitRef;
   private String sampleUnitType;
+  private CaseGroupStatus caseGroupStatus;
 }

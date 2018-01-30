@@ -37,5 +37,4 @@ public class CaseDetailsDTO {
 
     private List<CaseEventDTO> caseEvents;
 
-    private CaseGroupStatus caseGroupStatus;
 }
