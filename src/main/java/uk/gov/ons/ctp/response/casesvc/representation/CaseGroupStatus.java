@@ -5,5 +5,5 @@ package uk.gov.ons.ctp.response.casesvc.representation;
  *  Updated depending on enrolled respondent actions
  */
 public enum CaseGroupStatus {
- NOTSTARTED, INPROGRESS, COMPLETE
+ NOTSTARTED, INPROGRESS, COMPLETE, COMPLETEDBYPHONE, REOPENED
 }
