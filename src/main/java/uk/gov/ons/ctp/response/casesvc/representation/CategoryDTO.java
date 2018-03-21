@@ -76,7 +76,8 @@ public class CategoryDTO {
     VERIFICATION_CODE_SENT,
     COLLECTION_INSTRUMENT_ERROR,
     COMPLETED_BY_PHONE,
-    RESPONDENT_EMAIL_AMENDED;
+    RESPONDENT_EMAIL_AMENDED,
+    RESPONDENT_ADD_SURVEY;
 
     /**
      * Gets CategoryName enum from string
