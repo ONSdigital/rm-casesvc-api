@@ -79,7 +79,8 @@ public class CategoryDTO {
     COLLECTION_INSTRUMENT_ERROR,
     COMPLETED_BY_PHONE,
     RESPONDENT_EMAIL_AMENDED,
-    REPLACED;
+    REPLACED,
+    NO_LONGER_REQUIRED;
 
     /**
      * Gets CategoryName enum from string
