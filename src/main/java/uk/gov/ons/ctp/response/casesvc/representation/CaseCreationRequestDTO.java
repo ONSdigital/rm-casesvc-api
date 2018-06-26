@@ -5,17 +5,15 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-/**
- * Domain model object
- */
+/** Domain model object */
 @Data
 @AllArgsConstructor
 @NoArgsConstructor(access = AccessLevel.PUBLIC)
 public class CaseCreationRequestDTO {
 
-//  private Integer caseTypeId;
+  //  private Integer caseTypeId;
 
-//  private Integer actionPlanMappingId;
+  //  private Integer actionPlanMappingId;
 
   private String title;
 
@@ -26,5 +24,4 @@ public class CaseCreationRequestDTO {
   private String phoneNumber;
 
   private String emailAddress;
-
 }

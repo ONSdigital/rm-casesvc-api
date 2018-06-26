@@ -1,27 +1,28 @@
 package uk.gov.ons.ctp.response.casesvc.representation;
 
+import java.util.Date;
+import java.util.UUID;
 import lombok.AccessLevel;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import java.util.Date;
-import java.util.UUID;
-
-/**
- * Domain model object to represent a Case
- */
+/** Domain model object to represent a Case */
 @Data
 @AllArgsConstructor
 @NoArgsConstructor(access = AccessLevel.PUBLIC)
 public class CaseDTO {
 
-  /**
-   * enum for Case event
-   */
+  /** enum for Case event */
   public enum CaseEvent {
-    ACCOUNT_CREATED, ACTIVATED, DEACTIVATED, DISABLED,
-    HOUSEHOLD_PAPER_REQUESTED, INDIVIDUAL_RESPONSE_REQUESTED, REPLACED, CASE_CREATED
+    ACCOUNT_CREATED,
+    ACTIVATED,
+    DEACTIVATED,
+    DISABLED,
+    HOUSEHOLD_PAPER_REQUESTED,
+    INDIVIDUAL_RESPONSE_REQUESTED,
+    REPLACED,
+    CASE_CREATED
   }
 
   private CaseState state;
