@@ -1,24 +1,19 @@
 package uk.gov.ons.ctp.response.casesvc.representation;
 
 import com.fasterxml.jackson.annotation.JsonCreator;
+import java.util.Optional;
 import lombok.AccessLevel;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import uk.gov.ons.ctp.common.util.EnumUtils;
 
-import java.util.Optional;
-
-/**
- * The object to represent a Category
- */
+/** The object to represent a Category */
 @Data
 @AllArgsConstructor
 @NoArgsConstructor(access = AccessLevel.PUBLIC)
 public class CategoryDTO {
-  /**
-   * enum for category name
-   */
+  /** enum for category name */
   public enum CategoryName {
     ACTION_CANCELLATION_COMPLETED,
     ACTION_CANCELLATION_CREATED,
@@ -85,6 +80,7 @@ public class CategoryDTO {
 
     /**
      * Gets CategoryName enum from string
+     *
      * @param name name of Category
      * @return CategoryName category name
      */
@@ -95,6 +91,7 @@ public class CategoryDTO {
 
     /**
      * Creates optional of CategoryNames
+     *
      * @param name name of Category
      * @return Optional optional of Category Names
      */

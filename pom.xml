@@ -2,7 +2,7 @@
 
   <modelVersion>4.0.0</modelVersion>
   <artifactId>casesvc-api</artifactId>
-  <version>10.49.17-SNAPSHOT</version>
+  <version>10.49.19-SNAPSHOT</version>
   <packaging>jar</packaging>
 
   <name>CTP : CaseServiceApi</name>
@@ -17,7 +17,7 @@
   <parent>
     <groupId>uk.gov.ons.ctp.product</groupId>
     <artifactId>rm-common-config</artifactId>
-    <version>10.49.8</version>
+    <version>10.49.12</version>
   </parent>
 
   <dependencies>
@@ -50,6 +50,10 @@
         <artifactId>maven-checkstyle-plugin</artifactId>
       </plugin>
       <plugin>
+          <groupId>com.coveo</groupId>
+          <artifactId>fmt-maven-plugin</artifactId>
+      </plugin>
+      <plugin>
         <groupId>org.jvnet.jaxb2.maven2</groupId>
         <artifactId>maven-jaxb2-plugin</artifactId>
         <executions>
@@ -63,7 +67,7 @@
               <bindingDirectory>src/main/resources/casesvc/xsd/inbound</bindingDirectory>
               <bindingIncludes>
                 <include>JAXBSchemaCompilerCustomisations.xjb</include>
-              </bindingIncludes>         
+              </bindingIncludes>
               <schemaDirectory>src/main/resources/casesvc/xsd/inbound</schemaDirectory>
               <schemaIncludes>
                 <include>*.xsd</include>
@@ -88,7 +92,7 @@
               </plugins>
             </configuration>
           </execution>
-          
+
           <execution>
             <phase>generate-sources</phase>
             <id>outbound</id>
