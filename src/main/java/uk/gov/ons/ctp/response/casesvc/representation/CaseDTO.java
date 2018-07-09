@@ -28,6 +28,7 @@ public class CaseDTO {
   private CaseState state;
 
   private UUID id;
+  private UUID sampleUnitId;
   private UUID actionPlanId;
   private UUID collectionInstrumentId;
   private UUID partyId;
