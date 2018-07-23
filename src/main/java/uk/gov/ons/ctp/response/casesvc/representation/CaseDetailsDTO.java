@@ -20,6 +20,7 @@ public class CaseDetailsDTO {
   private UUID actionPlanId;
   private UUID collectionInstrumentId;
   private UUID partyId;
+  private UUID sampleUnitId;
 
   private String iac;
   private String caseRef;
