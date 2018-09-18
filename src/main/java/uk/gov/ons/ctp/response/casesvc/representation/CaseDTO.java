@@ -16,6 +16,7 @@ public class CaseDTO {
   /** enum for Case event */
   public enum CaseEvent {
     ACCOUNT_CREATED,
+    ACTIONPLAN_CHANGED,
     ACTIVATED,
     DEACTIVATED,
     DISABLED,
