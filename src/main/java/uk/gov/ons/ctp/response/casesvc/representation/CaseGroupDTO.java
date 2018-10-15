@@ -17,4 +17,5 @@ public class CaseGroupDTO {
   private String sampleUnitRef;
   private String sampleUnitType;
   private CaseGroupStatus caseGroupStatus;
+  private UUID surveyId;
 }
