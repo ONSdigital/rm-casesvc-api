@@ -1,6 +1,7 @@
 package uk.gov.ons.ctp.response.casesvc.representation;
 
 import io.swagger.annotations.ApiModelProperty;
+import java.util.HashMap;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 import lombok.AccessLevel;
@@ -34,4 +35,6 @@ public class CaseEventCreationRequestDTO {
   private String createdBy;
 
   private String subCategory;
+
+  private HashMap<String, String> metadata;
 }
