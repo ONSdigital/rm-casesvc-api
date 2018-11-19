@@ -4,4 +4,5 @@
   <caseId>string</caseId>
   <inboundChannel>OFFLINE</inboundChannel>
   <responseDateTime>2007-10-26T07:36:28</responseDateTime>
+  <partyId>string</partyId>
 </feed:caseReceipt>
