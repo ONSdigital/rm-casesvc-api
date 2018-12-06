@@ -1,6 +1,7 @@
 package uk.gov.ons.ctp.response.casesvc.representation;
 
 import java.util.Date;
+import java.util.Map;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 import lombok.AccessLevel;
@@ -32,4 +33,6 @@ public class CaseEventDTO {
   @NotNull
   @Size(min = DESC_MIN, max = DESC_MAX)
   private String description;
+
+  private Map<String, String> metadata;
 }

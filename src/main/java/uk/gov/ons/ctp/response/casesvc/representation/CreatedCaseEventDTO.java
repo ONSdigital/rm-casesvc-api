@@ -1,6 +1,7 @@
 package uk.gov.ons.ctp.response.casesvc.representation;
 
 import java.util.Date;
+import java.util.Map;
 import java.util.UUID;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
@@ -36,4 +37,6 @@ public class CreatedCaseEventDTO {
   @NotNull
   @Size(min = DESC_MIN, max = DESC_MAX)
   private String description;
+
+  private Map<String, String> metadata;
 }
